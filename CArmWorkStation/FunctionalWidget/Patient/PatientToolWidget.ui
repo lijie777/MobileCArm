@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PatientToolWidget</class>
+ <widget class="QFrame" name="PatientToolWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>256</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>256</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>256</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #14191C;</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>30</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>48</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="EmerPatientBtn">
+       <property name="minimumSize">
+        <size>
+         <width>224</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>224</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:#B4C4D9;
+background-color:#2A3137;
+border-radius:0px;
+}
+QPushButton:hover
+{
+color:#FFFFFF;
+}
+QPushButton:pressed
+{
+background-color: rgba(42, 49, 55, 0.5);
+}</string>
+       </property>
+       <property name="text">
+        <string>  急诊患者录入</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../CArmWorkStation.qrc">
+         <normaloff>:/CArmWorkStation/ImageSource/Patient/emergency.png</normaloff>:/CArmWorkStation/ImageSource/Patient/emergency.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="NewPatientBtn">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton
+{
+background:transparent;
+padding:0px;
+margin:-1px;
+font: 16px &quot;Microsoft YaHei&quot;;
+color:#B4C4D9;
+}
+		
+QToolButton:hover
+{
+color:#FFFFFF;
+}
+
+QToolButton:checked
+{
+color: #0091FF;
+}
+
+QToolButton:disabled
+{
+color: rgb(111, 111, 111);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  新建患者</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../CArmWorkStation.qrc">
+         <normaloff>:/CArmWorkStation/ImageSource/Patient/newPatient.png</normaloff>
+         <activeon>:/CArmWorkStation/ImageSource/Patient/newPatient_checked.png</activeon>:/CArmWorkStation/ImageSource/Patient/newPatient.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+       <property name="arrowType">
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="EditPatientBtn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton
+{
+background:transparent;
+padding:0px;
+margin:-1px;
+font: 16px &quot;Microsoft YaHei&quot;;
+color:#B4C4D9;
+}
+		
+QToolButton:hover
+{
+color:#FFFFFF;
+}
+
+QToolButton:checked
+{
+color: #0091FF;
+}
+
+QToolButton:disabled
+{
+color: rgb(111, 111, 111);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  编辑患者</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../CArmWorkStation.qrc">
+         <normaloff>:/CArmWorkStation/ImageSource/Patient/editPatient.png</normaloff>
+         <disabledoff>:/CArmWorkStation/ImageSource/Patient/editPatient_disable.png</disabledoff>
+         <activeon>:/CArmWorkStation/ImageSource/Patient/editPatient_checked.png</activeon>:/CArmWorkStation/ImageSource/Patient/editPatient.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+       <property name="arrowType">
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="ScheduledPatientBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton
+{
+background:transparent;
+padding:0px;
+margin:-1px;
+font: 16px &quot;Microsoft YaHei&quot;;
+color:#B4C4D9;
+}
+		
+QToolButton:hover
+{
+color:#FFFFFF;
+}
+
+QToolButton:checked
+{
+color: #0091FF;
+}
+
+QToolButton:disabled
+{
+color: rgb(111, 111, 111);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  已预约患者</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../CArmWorkStation.qrc">
+         <normaloff>:/CArmWorkStation/ImageSource/Patient/scheduled.png</normaloff>
+         <activeon>:/CArmWorkStation/ImageSource/Patient/scheduled_checked.png</activeon>:/CArmWorkStation/ImageSource/Patient/scheduled.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+       <property name="arrowType">
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QToolButton" name="CompletedPatientBtn">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>42</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QToolButton
+{
+background:transparent;
+padding:0px;
+margin:-1px;
+font: 16px &quot;Microsoft YaHei&quot;;
+color:#B4C4D9;
+}
+		
+QToolButton:hover
+{
+color:#FFFFFF;
+}
+
+QToolButton:checked
+{
+color: #0091FF;
+}
+
+QToolButton:disabled
+{
+color: rgb(111, 111, 111);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>  已执行患者</string>
+       </property>
+       <property name="icon">
+        <iconset resource="../../CArmWorkStation.qrc">
+         <normaloff>:/CArmWorkStation/ImageSource/Patient/completed.png</normaloff>
+         <activeon>:/CArmWorkStation/ImageSource/Patient/completed_checked.png</activeon>:/CArmWorkStation/ImageSource/Patient/completed.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="autoRepeat">
+        <bool>false</bool>
+       </property>
+       <property name="autoExclusive">
+        <bool>true</bool>
+       </property>
+       <property name="toolButtonStyle">
+        <enum>Qt::ToolButtonTextBesideIcon</enum>
+       </property>
+       <property name="arrowType">
+        <enum>Qt::NoArrow</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../CArmWorkStation.qrc"/>
+ </resources>
+ <connections/>
+</ui>

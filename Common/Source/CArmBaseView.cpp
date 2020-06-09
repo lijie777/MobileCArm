@@ -1,0 +1,2 @@
+﻿#include "CArmBaseView.h"
+
