@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RotateDialog</class>
+ <widget class="QWidget" name="RotateDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>763</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="leftMargin">
+    <number>30</number>
+   </property>
+   <property name="topMargin">
+    <number>30</number>
+   </property>
+   <property name="rightMargin">
+    <number>30</number>
+   </property>
+   <property name="bottomMargin">
+    <number>44</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPushButton" name="clsBtn">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+background:rgba(42,49,55,1);
+border-radius:4px;
+image:url(:/FunctionalWidget/FunctionalWidget/Review/Resource/close.png);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>640</width>
+           <height>130</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>640</width>
+           <height>130</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget
+{
+background:rgba(0,0,0,0.29);
+border-radius:4px;
+border:1px solid rgba(255,255,255,0.25);
+}</string>
+         </property>
+         <widget class="CArmBothwaySlider" name="slider">
+          <property name="geometry">
+           <rect>
+            <x>39</x>
+            <y>80</y>
+            <width>561</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QSlider
+{
+background:transparent;
+border:none;
+}
+
+QSlider::groove:horizontal{
+height: 4px;
+background:#425060;
+border: 1px solid #566576;
+border-radius: 2px;
+padding-left:-1px;
+padding right:-1px;
+}
+        
+QSlider::sub-page:horizontal{
+height: 4px;
+background: transparent;
+border: 1px solid transparent;
+border-radius: 2px;
+}
+  
+QSlider::handle:horizontal
+{
+width: 22px;
+background-color:rgba(255,255,255,1);
+margin-top: -10px;
+margin-bottom: -10px;
+border-radius: 5px;
+}</string>
+          </property>
+          <property name="minimum">
+           <number>-180</number>
+          </property>
+          <property name="maximum">
+           <number>180</number>
+          </property>
+          <property name="value">
+           <number>0</number>
+          </property>
+          <property name="sliderPosition">
+           <number>0</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+          <property name="tickPosition">
+           <enum>QSlider::NoTicks</enum>
+          </property>
+          <property name="tickInterval">
+           <number>0</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="value">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>10</y>
+            <width>124</width>
+            <height>52</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>124</width>
+            <height>52</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>124</width>
+            <height>52</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+border:none;
+font: 28px &quot;Microsoft YaHei&quot;;
+color:rgba(255,255,255,1);
+border-radius:2px;
+}</string>
+          </property>
+          <property name="text">
+           <string>-45°</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CArmBothwaySlider</class>
+   <extends>QSlider</extends>
+   <header>CArmBothwaySlider.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../CArmWorkStation.qrc"/>
+ </resources>
+ <connections/>
+</ui>

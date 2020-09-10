@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MoreInfoWidget</class>
+ <widget class="QFrame" name="MoreInfoWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>373</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>635</width>
+    <height>373</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>635</width>
+    <height>373</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #1F2327;</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="allMoreWidget">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_47">
+       <property name="spacing">
+        <number>31</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="verticalWidget_13" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_58">
+            <item>
+             <widget class="QLabel" name="label_36">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Aession#</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="AessionWarningLabel">
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgb(255, 85, 0);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_59">
+            <property name="spacing">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="AessionEdit">
+              <property name="minimumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit
+{
+border: 1px solid rgba(74,82,90,1);
+border-radius:2px;
+background:rgba(118, 133, 154, 0.2);
+color:#B4C4D9;
+font:normal 14px  Microsoft YaHei;
+}
+QLineEdit:focus
+{
+border:3px solid #9dadc1;
+border-radius:6px
+}
+QLineEdit:disabled
+{
+background:rgba(118, 133, 154, 0.05);
+border: 1px solid rgba(74,82,90,0.5);
+color: rgba(180, 196, 217, 0.6);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_38">
+              <property name="minimumSize">
+               <size>
+                <width>10</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>10</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="verticalWidget_15" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_21">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_62">
+            <item>
+             <widget class="QLabel" name="label_42">
+              <property name="minimumSize">
+               <size>
+                <width>70</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>Study ID</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="StudyIDWarningLabel">
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgb(255, 85, 0);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_63">
+            <property name="spacing">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="StudyIDEdit">
+              <property name="minimumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit
+{
+border: 1px solid rgba(74,82,90,1);
+border-radius:2px;
+background:rgba(118, 133, 154, 0.2);
+color:#B4C4D9;
+font:normal 14px  Microsoft YaHei;
+}
+QLineEdit:focus
+{
+border:3px solid #9dadc1;
+border-radius:6px
+}
+QLineEdit:disabled
+{
+background:rgba(118, 133, 154, 0.05);
+border: 1px solid rgba(74,82,90,0.5);
+color: rgba(180, 196, 217, 0.6);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_44">
+              <property name="minimumSize">
+               <size>
+                <width>10</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>10</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_49">
+       <property name="spacing">
+        <number>31</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="verticalWidget_16" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_22">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_66">
+            <item>
+             <widget class="QLabel" name="label_49">
+              <property name="minimumSize">
+               <size>
+                <width>32</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>32</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>身高</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="HeightWarningLabel">
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgb(255, 85, 0);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_67">
+            <property name="spacing">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QSpinBox" name="HeightSpinBox">
+              <property name="minimumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QSpinBox
+{
+border: 1px solid rgba(74,82,90,1);
+border-radius:2px;
+background:rgba(118, 133, 154, 0.2);
+color:#B4C4D9;
+font:normal 14px  Microsoft YaHei;
+}
+QSpinBox:focus
+{
+border:3px solid #9dadc1;
+border-radius:6px
+}
+QSpinBox:disabled
+{
+background:rgba(118, 133, 154, 0.05);
+border: 1px solid rgba(74,82,90,0.5);
+color: rgba(180, 196, 217, 0.6);
+}</string>
+              </property>
+              <property name="suffix">
+               <string/>
+              </property>
+              <property name="maximum">
+               <number>300</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_51">
+              <property name="minimumSize">
+               <size>
+                <width>10</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>10</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="verticalWidget_17" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_23">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_68">
+            <item>
+             <widget class="QLabel" name="label_52">
+              <property name="minimumSize">
+               <size>
+                <width>32</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>32</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>体重</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="WeightWarningLabel">
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgb(255, 85, 0);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_69">
+            <property name="spacing">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QSpinBox" name="WeightSpinBOx">
+              <property name="minimumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QSpinBox
+{
+border: 1px solid rgba(74,82,90,1);
+border-radius:2px;
+background:rgba(118, 133, 154, 0.2);
+color:#B4C4D9;
+font:normal 14px  Microsoft YaHei;
+}
+QSpinBox:focus
+{
+border:3px solid #9dadc1;
+border-radius:6px
+}
+QSpinBox:disabled
+{
+background:rgba(118, 133, 154, 0.05);
+border: 1px solid rgba(74,82,90,0.5);
+color: rgba(180, 196, 217, 0.6);
+}</string>
+              </property>
+              <property name="suffix">
+               <string/>
+              </property>
+              <property name="maximum">
+               <number>500</number>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_54">
+              <property name="minimumSize">
+               <size>
+                <width>10</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>10</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_70">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="verticalWidget_18" native="true">
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>300</width>
+           <height>80</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_24">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_71">
+            <item>
+             <widget class="QLabel" name="label_55">
+              <property name="minimumSize">
+               <size>
+                <width>64</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>64</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string>诊断医生</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="ReferralDoctorWarningLabel">
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgb(255, 85, 0);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="indent">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_72">
+            <property name="spacing">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="ReferralDoctorEdit">
+              <property name="minimumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>280</width>
+                <height>34</height>
+               </size>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit
+{
+border: 1px solid rgba(74,82,90,1);
+border-radius:2px;
+background:rgba(118, 133, 154, 0.2);
+color:#B4C4D9;
+font:normal 14px  Microsoft YaHei;
+}
+QLineEdit:focus
+{
+border:3px solid #9dadc1;
+border-radius:6px
+}
+QLineEdit:disabled
+{
+background:rgba(118, 133, 154, 0.05);
+border: 1px solid rgba(74,82,90,0.5);
+color: rgba(180, 196, 217, 0.6);
+}</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_57">
+              <property name="minimumSize">
+               <size>
+                <width>10</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>10</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_25">
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>20</number>
+       </property>
+       <property name="bottomMargin">
+        <number>20</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_58">
+           <property name="minimumSize">
+            <size>
+             <width>64</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>64</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color: #B4C4D9;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>评论描述</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="DescWarningLabel">
+           <property name="styleSheet">
+            <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgb(255, 85, 0);
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="indent">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="DescTextEdit">
+         <property name="minimumSize">
+          <size>
+           <width>610</width>
+           <height>68</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>610</width>
+           <height>68</height>
+          </size>
+         </property>
+         <property name="contextMenuPolicy">
+          <enum>Qt::NoContextMenu</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTextEdit
+{
+border: 1px solid rgba(74,82,90,1);
+border-radius:2px;
+background:rgba(118, 133, 154, 0.2);
+color:#B4C4D9;
+font:normal 14px  Microsoft YaHei;
+}
+
+QTextEdit:focus
+{
+border:3px solid #9dadc1;
+border-radius:6px
+}
+
+QTextEdit:disabled
+{
+background:rgba(118, 133, 154, 0.05);
+border: 1px solid rgba(74,82,90,0.5);
+color: rgba(180, 196, 217, 0.6);
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CArmTrackingWidget</class>
+ <widget class="QFrame" name="CArmTrackingWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>1024</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>1024</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame
+{
+border:none;
+}</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>256</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>256</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QWidget
+{
+background:#14191C;
+}</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_1" native="true">
+          <property name="styleSheet">
+           <string notr="true">QWidget
+{
+background:#14191C;
+}</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>14</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>14</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="logoLab">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>40</width>
+               <height>12</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color: #FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/logo.png&quot;);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::PlainText</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item alignment="Qt::AlignRight">
+            <widget class="QLabel" name="dateLab">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:rgba(180,196,217,1);
+font: 16px &quot;Microsoft YaHei&quot;;
+}</string>
+             </property>
+             <property name="text">
+              <string>2020-02-17</string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignRight">
+            <widget class="QLabel" name="timeLab">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:rgba(180,196,217,1);
+font: 16px &quot;Microsoft YaHei&quot;;
+}</string>
+             </property>
+             <property name="text">
+              <string>17:34</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="styleSheet">
+           <string notr="true">QWidget
+{
+background:rgba(42,49,55,1);
+}</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>30</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>25</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="nameLab">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>60</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>136</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:rgba(255,255,255,1);
+font: 16px &quot;Microsoft YaHei&quot;;
+}
+QToolTip
+{
+border:1px solid rgb(118, 118, 118);
+background-color: #1f2428;
+color:#ffffff;
+font-size:14px;
+border-radius:4px;
+}</string>
+             </property>
+             <property name="text">
+              <string>王小明</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="sexLab">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:rgba(180,196,217,1);
+font: 14px &quot;Microsoft YaHei&quot;;
+}</string>
+             </property>
+             <property name="text">
+              <string>男</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_34">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>1</width>
+               <height>12</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+background:rgba(199,215,232,0.1);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="ageLab">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:rgba(180,196,217,1);
+font: 14px &quot;Microsoft YaHei&quot;;
+}</string>
+             </property>
+             <property name="text">
+              <string>50</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_4" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>110</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget
+{
+background:#14191C;
+}</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>15</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>15</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="pulseLab">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>52</width>
+               <height>52</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>52</width>
+               <height>52</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/pulse.png&quot;);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <property name="topMargin">
+              <number>33</number>
+             </property>
+             <property name="bottomMargin">
+              <number>33</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="flouroLab">
+               <property name="minimumSize">
+                <size>
+                 <width>65</width>
+                 <height>18</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>65</width>
+                 <height>18</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+color:rgba(180,196,217,1);
+font: 18px &quot;Microsoft YaHei&quot;;
+}</string>
+               </property>
+               <property name="text">
+                <string>Fluoro</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <item alignment="Qt::AlignHCenter">
+                <widget class="QLabel" name="ppsValue">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+color:rgba(180,196,217,1);
+font: 14px &quot;Microsoft YaHei&quot;;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="ppsLab">
+                 <property name="styleSheet">
+                  <string notr="true">QLabel
+{
+color:rgba(180,196,217,1);
+font: 14px &quot;Microsoft YaHei&quot;;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>PPS</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_10">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="doseLab">
+             <property name="minimumSize">
+              <size>
+               <width>52</width>
+               <height>52</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>52</width>
+               <height>52</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/highdose.png&quot;);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignHCenter">
+            <widget class="QLabel" name="bodyLab">
+             <property name="minimumSize">
+              <size>
+               <width>52</width>
+               <height>52</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>52</width>
+               <height>52</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/arms.png&quot;);
+}</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_35">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:rgba(180,196,217,0.1);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_5" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>110</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget
+{
+background:#14191C;
+}</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>30</number>
+           </property>
+           <property name="topMargin">
+            <number>30</number>
+           </property>
+           <property name="rightMargin">
+            <number>30</number>
+           </property>
+           <property name="bottomMargin">
+            <number>30</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <property name="spacing">
+              <number>15</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="fluTimeLab">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>Fluoro Time</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="fluTimeValue">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 18px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>00:00</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <property name="spacing">
+              <number>15</number>
+             </property>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="kvpLab">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>kVp</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="kvpValue">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 18px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>55</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <property name="spacing">
+              <number>15</number>
+             </property>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="maLab">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>mA</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="maValue">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 18px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>1.0</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_30">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:rgba(180,196,217,0.1);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_6" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>143</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>143</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget
+{
+background:#14191C;
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="spacing">
+            <number>5</number>
+           </property>
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="topMargin">
+            <number>30</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <property name="bottomMargin">
+            <number>30</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignRight|Qt::AlignVCenter">
+              <widget class="QLabel" name="gycmValue">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 18px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>0.000</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="gycmLab">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>Gycm²</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignRight">
+              <widget class="QLabel" name="mgyperValue">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 18px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>0.000</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="mgyminLab">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>mGy/min</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <property name="spacing">
+              <number>10</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item alignment="Qt::AlignRight">
+              <widget class="QLabel" name="mgyValue">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 18px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>0.00</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="mgyLab">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>mGy</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_19">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:rgba(180,196,217,0.1);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_8" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>172</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>172</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget
+{
+background:#14191C;
+}</string>
+          </property>
+          <widget class="QLabel" name="label_21">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>59</y>
+             <width>154</width>
+             <height>77</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>154</width>
+             <height>77</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>154</width>
+             <height>77</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/temperature.png&quot;);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>95</x>
+             <y>85</y>
+             <width>68</width>
+             <height>68</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>68</width>
+             <height>68</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>68</width>
+             <height>68</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/normalhot.png&quot;);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="warningLab">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>120</y>
+             <width>16</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16</width>
+             <height>16</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/warninghot.png&quot;);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>241</width>
+             <height>30</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <spacer name="horizontalSpacer_11">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="abortLab">
+              <property name="minimumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/abortScan.png&quot;);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="laserLab">
+              <property name="minimumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/laser.png&quot;);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="networkLab">
+              <property name="minimumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/network.png&quot;);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="rasterLab">
+              <property name="minimumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/install.png&quot;);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="connLab">
+              <property name="minimumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/connect.png&quot;);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="powerLab">
+              <property name="minimumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>28</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/power.png&quot;);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_20">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>1</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background:rgba(180,196,217,0.1);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_7" native="true">
+          <property name="styleSheet">
+           <string notr="true">QWidget
+{
+background:#14191C;
+}</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <property name="spacing">
+            <number>10</number>
+           </property>
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="topMargin">
+            <number>30</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <property name="bottomMargin">
+            <number>9</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="capacityBar" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout_15">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="picValue">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+background:rgba(32,107,195,1);
+color:rgba(32,107,195,1);
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="movieValue">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+background:rgba(202,41,113,1);
+color:rgba(202,41,113,1);
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="styleSheet">
+                 <string notr="true">background:#7E8792;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background:#363A3C;</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_27">
+               <property name="minimumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+color:#FFFFFF;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/disk.png&quot;);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>10</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="usefulValue">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>200</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_16">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>G可用</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_9">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>10</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_26">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>(共</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignHCenter">
+              <widget class="QLabel" name="capacityValue">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>1024</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 16px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>G）</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="picColor">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>6</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+background:rgba(32,107,195,1);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>8</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_29">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>图像</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item alignment="Qt::AlignLeft">
+              <widget class="QLabel" name="picCount">
+               <property name="layoutDirection">
+                <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:#FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string>100</string>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:#FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string>张</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_32">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>6</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+background:rgba(202,41,113,1);
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>8</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_31">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>视频</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item alignment="Qt::AlignRight">
+              <widget class="QLabel" name="movieCount">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:#FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string>12</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:#FFFFFF;
+}</string>
+               </property>
+               <property name="text">
+                <string>部</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="minimumSize">
+                <size>
+                 <width>6</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>6</width>
+                 <height>19</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background:#7E8792;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_13">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Fixed</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>8</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>其他</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_12">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item alignment="Qt::AlignRight">
+              <widget class="QLabel" name="otherCount">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>100</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item alignment="Qt::AlignRight">
+              <widget class="QLabel" name="label_5">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+font: 14px &quot;Microsoft YaHei&quot;;
+color:rgba(180,196,217,1);
+}</string>
+               </property>
+               <property name="text">
+                <string>G</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="leftMargin">
+           <number>9</number>
+          </property>
+          <property name="topMargin">
+           <number>9</number>
+          </property>
+          <property name="rightMargin">
+           <number>9</number>
+          </property>
+          <property name="bottomMargin">
+           <number>9</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="screenBtn">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>113</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>113</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border:1px solid transparent;
+border-radius:2px;
+background:rgba(255,255,255,0.1);
+font: normal 18px  Microsoft YaHei;
+color:#B4C4D9FF;
+}
+
+QPushButton:hover{
+border:1px solid transparent;
+background-color:#333B42;
+background:rgba(255,255,255,0.2);
+color:#B4C4D9FF;
+}
+
+QPushButton:pressed{
+background:rgba(20,25,28,1);
+border:1px solid rgba(64,75,86,1);
+color: #B4C4D9FF;
+}
+
+QPushButton:disabled{
+border:1px solid transparent;
+color:rgba(180, 196, 217, 0.1);
+background:rgba(255,255,255,0.1);
+opacity:0.4;
+}</string>
+            </property>
+            <property name="inputMethodHints">
+             <set>Qt::ImhTime</set>
+            </property>
+            <property name="text">
+             <string>    屏保    </string>
+            </property>
+            <property name="icon">
+             <iconset resource="../CArmWorkStation.qrc">
+              <normaloff>:/TrackingWidget/TrackingWidget/Resource/screen.png</normaloff>
+              <disabledon>:/TrackingWidget/TrackingWidget/Resource/screendis.png</disabledon>:/TrackingWidget/TrackingWidget/Resource/screen.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="transferBtn">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>113</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>113</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background:#2A3137;
+border:1px solid transparent;
+border-radius:2px;
+background:rgba(255,255,255,0.1);
+font: normal 18px  Microsoft YaHei;
+color:#B4C4D9FF;
+}
+
+QPushButton:hover{
+background-color:#333B42;
+background:rgba(255,255,255,0.2);
+color:#B4C4D9FF;
+}
+
+QPushButton:pressed{
+background-color:#22272C;
+background:rgba(20,25,28,1);
+border:1px solid rgba(64,75,86,1);
+color: #B4C4D9FF;
+}
+
+QPushButton:disabled{
+background-color:#22272C;
+color:rgba(180, 196, 217, 0.1);
+background:rgba(255,255,255,0.1);
+opacity:0.4;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>图像传输</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../CArmWorkStation.qrc">
+              <normaloff>:/TrackingWidget/TrackingWidget/Resource/transfer.png</normaloff>:/TrackingWidget/TrackingWidget/Resource/transfer.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QStackedWidget" name="stackedWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="trackingView">
+        <property name="styleSheet">
+         <string notr="true">QWidget
+{
+background:#000000;
+}</string>
+        </property>
+        <widget class="QFrame" name="statusWidget">
+         <property name="geometry">
+          <rect>
+           <x>415</x>
+           <y>50</y>
+           <width>150</width>
+           <height>150</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>150</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget
+{
+background:transparent;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="statusPix">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>150</width>
+            <height>150</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+background:transparent;
+border:none;
+color:#FFFFD42A;
+font: 28px &quot;Microsoft YaHei&quot;;
+image:url(&quot;:/TrackingWidget/TrackingWidget/Resource/expose.png&quot;);
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="statusTip">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>131</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>28</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>28</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+background:transparent;
+border:none;
+color:#FFFFD42A;
+font: 16px &quot;Microsoft YaHei&quot;;
+}</string>
+          </property>
+          <property name="text">
+           <string>曝光中</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>-1</y>
+           <width>1031</width>
+           <height>1031</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="viewerLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+        <zorder>horizontalLayoutWidget_2</zorder>
+        <zorder>statusWidget</zorder>
+       </widget>
+       <widget class="QWidget" name="screenView">
+        <property name="styleSheet">
+         <string notr="true">QWidget
+{
+background:#000000;
+}</string>
+        </property>
+        <widget class="QLabel" name="hourLab">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>340</y>
+           <width>340</width>
+           <height>320</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>340</width>
+           <height>320</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>340</width>
+           <height>320</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel
+{
+background:rgba(20,25,28,1);
+border-radius:20px;
+color:#B1C1D6;
+font: 200px &quot;Microsoft YaHei&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>17</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="minLab">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>340</y>
+           <width>340</width>
+           <height>320</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>340</width>
+           <height>320</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>340</width>
+           <height>320</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel
+{
+background:rgba(20,25,28,1);
+border-radius:20px;
+color:#B1C1D6;
+font: 200px &quot;Microsoft YaHei&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>34</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="dateLab_2">
+         <property name="geometry">
+          <rect>
+           <x>700</x>
+           <y>280</y>
+           <width>180</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>180</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>180</width>
+           <height>32</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel
+{
+border-radius:20px;
+color:#B1C1D6;
+font: 32px &quot;Microsoft YaHei&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>2020-02-17</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_41">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>495</y>
+           <width>881</width>
+           <height>8</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../CArmWorkStation.qrc"/>
+ </resources>
+ <connections/>
+</ui>

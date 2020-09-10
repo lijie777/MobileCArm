@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CArmFunctionWidget</class>
+ <widget class="QFrame" name="CArmFunctionWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>230</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="pageList">
+     <property name="maximumSize">
+      <size>
+       <width>1024</width>
+       <height>1024</height>
+      </size>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget
+{
+background-color: #1F2327;
+}
+</string>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="verticalWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>256</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>256</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">QWidget
+{
+background-color: #14191C;
+}
+</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QToolButton" name="reviewBtn">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>46</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>46</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::ClickFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QToolButton
+{
+background:transparent;
+padding:0px;
+margin:-1px;
+image: url(:/CArmWorkStation/ImageSource/Menu/view.png);
+}
+		
+QToolButton:hover
+{
+image: url(:/CArmWorkStation/ImageSource/Menu/view-press.png);
+}
+
+
+QToolButton:checked
+{
+image: url(:/CArmWorkStation/ImageSource/Menu/view-press.png);
+border-bottom:4px solid #0091FF;
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoRepeat">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="dataBtn">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>46</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>46</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::ClickFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QToolButton
+{
+background:transparent;
+padding:0px;
+margin:-1px;
+image: url(:/CArmWorkStation/ImageSource/Menu/catalog.png);
+}
+		
+QToolButton:hover
+{
+image: url(:/CArmWorkStation/ImageSource/Menu/catalog-press.png);
+}
+
+QToolButton:checked
+{
+image: url(:/CArmWorkStation/ImageSource/Menu/catalog-press.png);
+border-bottom:4px solid #0091FF;
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoRepeat">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="patientBtn">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>46</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>46</height>
+            </size>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::ClickFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QToolButton
+{
+background:transparent;
+padding:0px;
+margin:-1px;
+image: url(:/CArmWorkStation/ImageSource/Menu/patient.png);
+}
+		
+QToolButton:hover
+{
+image: url(:/CArmWorkStation/ImageSource/Menu/patient-press.png);
+}
+
+
+QToolButton:checked
+{
+image: url(:/CArmWorkStation/ImageSource/Menu/patient-press.png);
+border-bottom:4px solid #0091FF;
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoRepeat">
+            <bool>false</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="menuButton">
+           <property name="minimumSize">
+            <size>
+             <width>42</width>
+             <height>42</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>42</width>
+             <height>42</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+background:#14191c;
+padding:0px;
+margin:-1px;
+	image: url(:/CArmWorkStation/ImageSource/Menu/menu.png);
+}
+		
+QPushButton:hover{
+background:#2a3137;
+padding:0px;
+border-style:solid;
+border-radius:1px;
+border-width:1px;
+border-color:#ddd;
+color:white;}
+
+
+QPushButton:checked{
+background:#2a3137;
+padding:0px;
+border-style:solid;
+border-radius:1px;
+border-width:1px;
+border-color:#ddd;
+color:white;}
+
+QToolTip
+{
+border:1px solid rgb(118, 118, 118);
+background-color: #1f2428;
+color:#ffffff;
+font-size:14px;
+border-radius:4px;
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QStackedWidget" name="toolList">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QStackedWidget
+{
+background-color: #14191C;
+}
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../CArmWorkStation.qrc"/>
+ </resources>
+ <connections/>
+</ui>
