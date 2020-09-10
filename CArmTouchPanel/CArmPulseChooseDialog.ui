@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CArmPulseChooseDialog</class>
+ <widget class="QDialog" name="CArmPulseChooseDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>222</width>
+    <height>70</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CArmPulseChooseDialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+background:transparent;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>222</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PPSBtn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>35</y>
+     <width>41</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+text-align:right;
+font-size:14px;
+font-family:NotoSansCJK-Regular,NotoSansCJK;
+font-weight:400;
+color:rgba(255,255,255,1);
+line-height:21px;
+}</string>
+   </property>
+   <property name="text">
+    <string>2PPS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PPS_Btn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>39</y>
+     <width>7</width>
+     <height>7</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="CArmTouchPanel.qrc">
+     <normaloff>:/modelParts/Resource/modelParts/triangle.png</normaloff>:/modelParts/Resource/modelParts/triangle.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="normalDoseBtn">
+   <property name="geometry">
+    <rect>
+     <x>74</x>
+     <y>22</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+image:url(:/modelParts/Resource/modelParts/common_dose.png)
+}
+QPushButton:checked{
+image:url(:/modelParts/Resource/modelParts/common_dose_checked.png)
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="enhanceDoseBtn">
+   <property name="geometry">
+    <rect>
+     <x>123</x>
+     <y>22</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+image:url(:/modelParts/Resource/modelParts/dose_Enhance.png)
+}
+QPushButton:checked{
+image:url(:/modelParts/Resource/modelParts/dose_Enhance_checked.png)
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="childDoseBtn">
+   <property name="geometry">
+    <rect>
+     <x>179</x>
+     <y>22</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+image:url(:/modelParts/Resource/modelParts/low_dose.png)
+}
+QPushButton:checked{
+image:url(:/modelParts/Resource/modelParts/low_dose_checked.png)
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="CArmTouchPanel.qrc"/>
+ </resources>
+ <connections/>
+</ui>

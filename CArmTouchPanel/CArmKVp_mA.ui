@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CArmKVp_mA</class>
+ <widget class="QWidget" name="CArmKVp_mA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>328</width>
+    <height>117</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CArmKVp_mA</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background:rgba(14,14,14,1);
+}
+QLabel{
+background:transparent;
+font-size:16px;
+font-family:NotoSansCJK-Regular,NotoSansCJK;
+font-weight:400;
+color:rgba(180,196,217,1);
+line-height:24px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="autoBtn">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>24</y>
+     <width>66</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border:0px;
+font-size:16px;
+font-family:NotoSansCJK-DemiLight,NotoSansCJK;
+font-weight:normal;
+color:rgba(180,196,217,1);
+line-height:24px;
+}
+QPushButton:checked{
+background:rgba(0,145,255,1);
+border-radius:2px 2px 0px 0px;
+font-size:16px;
+font-family:NotoSansCJK-Regular,NotoSansCJK;
+font-weight:400;
+color:rgba(255,255,255,1);
+line-height:24px;
+}</string>
+   </property>
+   <property name="text">
+    <string>A</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="kvpReduceBtn">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>20</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:rgba(118,133,154,0.31);
+border-radius:2px;
+border:1px solid rgba(74,82,90,0.43);
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/reduce_normal.png);
+
+}
+
+QPushButton:pressed{
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/reduce_press.png);
+}
+
+QPushButton:disabled{
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/reduce_disable.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="manualBtn">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>58</y>
+     <width>66</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border:0px;
+font-size:16px;
+font-family:NotoSansCJK-DemiLight,NotoSansCJK;
+font-weight:normal;
+color:rgba(180,196,217,1);
+line-height:24px;
+}
+QPushButton:checked{
+background:rgba(0,145,255,1);
+border-radius:2px 2px 0px 0px;
+font-size:16px;
+font-family:NotoSansCJK-Regular,NotoSansCJK;
+font-weight:400;
+color:rgba(255,255,255,1);
+line-height:24px;
+}</string>
+   </property>
+   <property name="text">
+    <string>M</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mAReduceBtn">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>69</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:rgba(118,133,154,0.31);
+border-radius:2px;
+border:1px solid rgba(74,82,90,0.43);
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/reduce_normal.png);
+
+}
+
+QPushButton:pressed{
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/reduce_press.png);
+}
+
+QPushButton:disabled{
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/reduce_disable.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="kvpAddBtn">
+   <property name="geometry">
+    <rect>
+     <x>267</x>
+     <y>20</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:rgba(118,133,154,0.31);
+border-radius:2px;
+border:1px solid rgba(74,82,90,0.43);
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/add_normal.png);
+
+}
+
+QPushButton:pressed{
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/add_press.png);
+}
+
+QPushButton:disabled{
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/add_disable.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mAAddBtn">
+   <property name="geometry">
+    <rect>
+     <x>267</x>
+     <y>69</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background:rgba(118,133,154,0.31);
+border-radius:2px;
+border:1px solid rgba(74,82,90,0.43);
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/add_normal.png);
+
+}
+
+QPushButton:pressed{
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/add_press.png);
+}
+
+QPushButton:disabled{
+image:url(:/adjustkVpAndmA/Resource/adjustkVpAndmA/add_disable.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="kVpLbe">
+   <property name="geometry">
+    <rect>
+     <x>213</x>
+     <y>25</y>
+     <width>35</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mALbe">
+   <property name="geometry">
+    <rect>
+     <x>213</x>
+     <y>74</y>
+     <width>35</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>25</y>
+     <width>28</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>kVp</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>76</y>
+     <width>28</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>mA</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
